@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="244dp"
+        android:text="First"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="12dp"
+        android:text="Second"
+        app:layout_constraintStart_toEndOf="@+id/btFirst"
+        app:layout_constraintTop_toBottomOf="@+id/btFirst"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Third"
+        app:layout_constraintStart_toStartOf="@+id/btFirst"
+        app:layout_constraintTop_toBottomOf="@+id/btFirst"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btForth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:text="Forth"
+        app:layout_constraintStart_toEndOf="@+id/btThird"
+        app:layout_constraintTop_toTopOf="@+id/btThird"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
